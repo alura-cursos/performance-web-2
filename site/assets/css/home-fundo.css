@@ -1,0 +1,137 @@
+.home-fundo-container {
+	display: none;
+}
+
+@media (min-width: 720px) {
+	.home-fundo {
+		background: url(../../assets/img/background-cidade-fundo.svg) no-repeat bottom center;
+
+		/* fallback */
+		background-size: 100% 100%;
+		background-position: bottom center;
+
+		background-size: 100% calc(100% + 6em);
+		background-position: bottom -20px center;
+
+		position: relative;
+	}
+
+	.home-fundo-container {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+
+	.home-fundo-inner-container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	.home-fundo .header,
+	.home-fundo .home-headline,
+	.home-fundo .categoriaCard-lista {
+		position: relative;
+		z-index: 3;
+	}
+
+	.home-fundo-nuvem {
+		background: url(../../assets/img/background-cidade-nuvem.svg) no-repeat bottom center;
+		position: absolute;
+		z-index: 2;
+	}
+
+	.home-fundo-nuvem.direita {
+		padding-top: 2.75%;
+		width: 5.5%;
+		top: 22%;
+		right: 0;
+	}
+
+	.home-fundo-nuvem.esquerda {
+		padding-top: 2.75%;
+		width: 5.5%;
+		top: 29%;
+		left: 4%;
+		z-index: 3;
+	}
+
+	.home-fundo-nuvem.esquerda-grande {
+		background: url(../../assets/img/background-cidade-nuvem-grande.svg) no-repeat bottom center;
+		padding-top: 5%;
+		width: 10%;
+		top: 24%;
+		left: 0;
+	}
+
+	.home-fundo-drone {
+		background: url(../../assets/img/background-cidade-drone.svg) no-repeat bottom center;
+		position: absolute;
+		z-index: 2;
+
+		padding-top: 2.5%;
+		width: 6%;
+		top: 44%;
+		left: 8%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.home-fundo {
+		background-size: 100% 110%;
+		background-position: bottom -70px center;
+	}
+}
+
+@media (min-width: 1400px) {
+	.home-fundo {
+		background-size: 100% 100%;
+		background-position: bottom   center;
+	}
+}
+
+@keyframes move-nuvem {
+	to {
+		transform: translate3d(-15%, 0, 0);
+	}
+}
+
+.home-fundo-animado .home-fundo-nuvem.esquerda-grande {
+	animation: move-nuvem 5s alternate infinite ease-in;
+}
+.home-fundo-animado .home-fundo-nuvem.esquerda {
+	animation: move-nuvem 4s alternate infinite ease-out;
+}
+.home-fundo-animado .home-fundo-nuvem.direita {
+	animation: move-nuvem 4s alternate infinite linear;
+}
+
+@keyframes move-drone {
+	0%, 10%, 100% {
+		transform: translate3d(0, 100%, 0);
+		opacity: 1;
+	}
+
+	25%, 35% {
+		transform: scale(0.8) translate3d(250%, 0%, 0);
+		opacity: 0.5;
+	}
+
+	50%, 60% {
+		transform: translate3d(100%, 150%, 0);
+		opacity: 1;
+	}
+
+	70%, 80% {
+		transform: scale(1.15) translate3d(200%, 300%, 0);
+	}
+}
+
+.home-fundo-animado .home-fundo-drone {
+	animation: move-drone 20s infinite linear;
+}

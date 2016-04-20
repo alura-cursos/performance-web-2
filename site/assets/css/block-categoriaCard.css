@@ -1,0 +1,84 @@
+.categoriaCard-lista {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+	.categoriaCard-item {
+		display: inline-block; /* fallback pra flex sem wrap */
+		padding: 15px;
+		width: 50%;
+		text-decoration: none;
+	}
+
+	.categoriaCard-item-icone {
+		display: block;
+		margin:  -6px -6px 4px auto;
+		opacity: 0.6;
+		height: 28px;
+		fill: white;
+		width: 30px;
+	}
+	
+	.categoriaCard-item-nome {
+		color: white;
+		font-weight: bold;
+		font-size: 1em;
+	}
+
+		.categoriaCard-item-nome-cursos {
+			font-size: 80%;
+			font-weight: normal;
+			line-height: 1;
+		}
+
+	.categoriaCard-item-descricao {
+		color: #fff;
+		font-size: 14px;
+		font-style: italic;
+		opacity: 0.6;
+		margin-top: 4px;
+	}
+
+@media (min-width: 600px) {
+	.categoriaCard-item {
+		width: 32%;
+		width: calc((100% - 14px * 2) / 3);
+		transition: transform .3s;
+	}
+
+	.categoriaCard-item:hover {
+		transform: translateY(-2%);
+	}
+
+	.categoriaCard-item-icone {
+		height: 32px;
+	}
+
+	.categoriaCard-item:nth-child(-n + 3) { /* margem só na 1a linha */
+		margin-bottom: 14px;
+	}
+}
+
+@media not all and (min-width: 720px) {
+	.categoriaCard-item-descricao {
+		display: none;
+	}
+}
+@media (min-width: 1200px) {
+	.categoriaCard-lista {
+		flex-wrap: nowrap;
+	}
+
+	.categoriaCard-item {
+		border-top: 5px solid rgba(255,255,255,0.3);
+		margin-bottom: 0 !important;
+		width: 15.3%;
+		max-width: 180px;
+	}
+
+	.categoriaCard-item-icone {
+		margin: 0 0 60px 0;
+	}
+}

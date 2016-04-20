@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>Cadastrado na Newsletter do Alura</title>
+
+	<script inline src="assets/js/home.js"></script>
+
+	<!-- build:js assets/js/scripts.js -->
+	<script src="assets/js/menu.js"></script>
+	<script src="assets/js/busca.js"></script>
+	<script src="assets/js/detect.js"></script>
+	<script src="assets/js/footer.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:css assets/css/estilos.css -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/base.css">
+	<link rel="stylesheet" href="assets/css/colors.css">
+	<link rel="stylesheet" href="assets/css/font.css">
+
+	<link rel="stylesheet" href="assets/css/block-buttons.css">
+	<link rel="stylesheet" href="assets/css/block-categoriaCard.css">
+	<link rel="stylesheet" href="assets/css/block-conteudo.css">
+	<link rel="stylesheet" href="assets/css/block-cursoCard.css">
+	<link rel="stylesheet" href="assets/css/block-depoimentos.css">
+	<link rel="stylesheet" href="assets/css/block-elasticMedia.css">
+	<link rel="stylesheet" href="assets/css/block-footer-listaCursos.css">
+	<link rel="stylesheet" href="assets/css/block-footer.css">
+	<link rel="stylesheet" href="assets/css/block-form-erro.css">
+	<link rel="stylesheet" href="assets/css/block-grupoCaelum.css">
+	<link rel="stylesheet" href="assets/css/block-header-busca.css">
+	<link rel="stylesheet" href="assets/css/block-header.css">
+	<link rel="stylesheet" href="assets/css/block-highlighted.css">
+	<link rel="stylesheet" href="assets/css/block-painelPlanos.css">
+	<link rel="stylesheet" href="assets/css/block-titulo-destaque.css">
+	<link rel="stylesheet" href="assets/css/block-titulos.css">
+
+	<link rel="stylesheet" href="assets/css/home-aprenda.css">
+	<link rel="stylesheet" href="assets/css/home-diferenciais.css">
+	<link rel="stylesheet" href="assets/css/home-fundo.css">
+	<link rel="stylesheet" href="assets/css/home.css">
+	<!-- endbuild -->
+</head>
+<body>
+	
+<header class="header">
+
+	<section class="header-barraBusca">
+		<div class="container">
+			<form action="/busca" class="header-barraBusca-form">
+				<label for="header-barraBusca-campoBusca">Qual curso procura?</label>
+				<input type="search" id="header-barraBusca-campoBusca" name="q" placeholder="Digite aqui a busca">
+				<button class="header-barraBusca-submit" type="submit">Buscar</button>
+			</form>
+		</div>
+	</section>
+	
+	<div class="container">
+		<a class="header-logo" href=".">
+			<img inline src="assets/img/logo-alura.svg" alt="Alura">
+		</a>
+
+		<div class="header-navegacao">
+			<form action="/busca" class="header-navegacao-form">
+				<input class="navegacao-form-input" type="search" placeholder="Digite sua busca aqui" name="q"><!--
+				--><button class="navegacao-form-submit" type="submit">
+					<img class="header-busca-icone" src="assets/img/busca.svg">
+				</button>
+			</form>
+
+			<a href="/busca" class="header-busca">
+				<img class="header-busca-icone" src="assets/img/busca.svg">
+			</a>
+
+			<a href="https://cursos.alura.com.br/dashboard" class="header-areaAluno">
+				Login
+			</a>
+
+			<a href="#planos" class="header-cta">
+				Matricule-se
+			</a>
+		</div>
+	</div>
+</header>
+
+<h1 class="titulo-principal">
+	<div class="container">Obrigado!</div>
+</h1>
+
+<div class="container conteudo">
+	Agora você receberá todas as novidades da nossa newsletter.
+</div>
+
+<footer class="footer">	
+	<div class="container">
+		<div class="footer-logos">
+			<a class="footer-logos-home" href="/">
+				<img src="assets/img/logo-alura.svg" alt="Alura" class="footer-logo">
+			</a>
+			<a href="http://www.caelum.com.br/" class="footer-link-caelum">
+				<h3 class="footer-powered-by">Powered by</h3>
+				<img src="assets/img/logo-caelum.svg" alt="Caelum" class="footer-logo footer-caelumLogo">
+			</a>
+		</div>
+		<div class="footer-navegue">
+			<h2 class="footer-navegue-titulo">Navegue</h2>
+			<ul class="footer-navegue-lista">
+				<li class="footer-navegue-lista-link"><a href="/dashboard">Área do Aluno</a></li>
+				<li class="footer-navegue-lista-link"><a href="/apostilas">Apostilas</a></li>
+				<li class="footer-navegue-lista-link"><a href="#planos">Planos</a></li>
+				<li class="footer-navegue-lista-link"><a href="/contato-empresas">Empresas</a></li>
+				<li class="footer-navegue-lista-link"><a href="/cursos-online-tecnologia">Todos os cursos</a></li>
+				<li class="footer-navegue-lista-link"><a href="/instrutores">Instrutores</a></li>
+				<li class="footer-navegue-lista-link"><a href="http://blog.alura.com.br/">Blog do Alura</a></li>
+				<li class="footer-navegue-lista-link"><a href="/politica-de-privacidade">Política de Privacidade</a></li>
+				<li class="footer-navegue-lista-link"><a href="/contato">Contato</a></li>
+				<li class="footer-navegue-lista-link"><a href="/sobre">Sobre nós</a></li>
+				<li class="footer-navegue-lista-link"><a href="http://suporte.alura.com.br/">Perguntas frequentes</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-parceiros">
+				<h2 class="footer-parceiros-titulo">Parceiros</h2>
+				<a class="footer-parceiros-galandra" href="http://www.galandra.com.br/">
+					<img src="assets/img/logo-galandra-cinza.svg" alt="Galandra" class="footer-parceiros-imagem">
+				</a>
+				<a class="footer-parceiros-cdc" href="http://www.casadocodigo.com.br/">
+					<img src="assets/img/logo-cdc-cinza.svg" alt="Casa do Código" class="footer-parceiros-imagem">
+				</a>
+			</div>
+		</div>	
+	</div>
+</footer>
+
+<div class="listaCursos">
+	<div class="container">
+				<div class="listaCursos-categoria">
+			<h2 class="listaCursos-categoria-nome">
+				<a href="/cursos-online-mobile">
+					Cursos de Mobile
+				</a>
+			</h2>
+			<ul class="listaCursos-categoria-list">
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-mobile#filtro-ios">
+							Cursos Online de iOS
+						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-mobile#filtro-android">
+							Cursos Online de Android
+						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-mobile#filtro-multiplataforma">
+							Cursos Online de Multiplataforma
+						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-mobile#filtro-jogos">
+							Cursos Online de Jogos
+						</a>
+					</li>
+				</ul>
+		</div>
+		<div class="listaCursos-categoria">
+			<h2 class="listaCursos-categoria-nome">
+				<a href="/cursos-online-programacao">
+					Cursos de Programação				</a>
+			</h2>
+			<ul class="listaCursos-categoria-list">
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-programacao#filtro-grupo-java">
+							Cursos Online de Java						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-programacao#filtro-grupo-php">
+							Cursos Online de PHP						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-programacao#filtro-grupo-dotnet">
+							Cursos Online de .NET						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-programacao#filtro-grupo-python">
+							Cursos Online de Python						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-programacao#filtro-grupo-ruby">
+							Cursos Online de Ruby & Rails						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-programacao#filtro-grupo-outros">
+							Cursos Online de Outros						</a>
+					</li>
+				</ul>
+		</div>
+		<div class="listaCursos-categoria">
+			<h2 class="listaCursos-categoria-nome">
+				<a href="/cursos-online-front-end">
+					Cursos de Front-end				</a>
+			</h2>
+			<ul class="listaCursos-categoria-list">
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-front-end#filtro-front-end">
+							Cursos Online de HTML e CSS						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-front-end#filtro-jquery">
+							Cursos Online de jQuery						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-front-end#filtro-javascript">
+							Cursos Online de JavaScript						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-front-end#filtro-frameworks-mvc-em-javascript">
+							Cursos Online de Frameworks MVC						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-front-end#filtro-automacao-front-end">
+							Cursos Online de Automação front-end						</a>
+					</li>
+							</ul>
+		</div>
+				<div class="listaCursos-categoria">
+			<h2 class="listaCursos-categoria-nome">
+				<a href="/cursos-online-infraestrutura">
+					Cursos de Infraestrutura				</a>
+			</h2>
+			<ul class="listaCursos-categoria-list">
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-sql">
+							Cursos Online de SQL						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-big-data">
+							Cursos Online de Big data						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-nosql">
+							Cursos Online de NoSQL						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-linux-comandos-e-processos">
+							Cursos Online de Linux						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-build-e-versionamento">
+							Cursos Online de Builds e versionamento						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-entrega-continua">
+							Cursos Online de Entrega Contínua						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-redes">
+							Cursos Online de Redes						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-windows">
+							Cursos Online de Windows						</a>
+					</li>
+							</ul>
+		</div>
+		<div class="listaCursos-categoria">
+			<h2 class="listaCursos-categoria-nome">
+				<a href="/cursos-online-design-ux">
+					Cursos de Design & UX				</a>
+			</h2>
+			<ul class="listaCursos-categoria-list">
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-design">
+							Cursos Online de Design						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-photoshop-para-web-e-imagens">
+							Cursos Online de Photoshop						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-illustrator">
+							Cursos Online de Illustrator						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-videos">
+							Cursos Online de Vídeos						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-animacoes">
+							Cursos Online de Animações						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-fotografia">
+							Cursos Online de Fotografia						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-ux">
+							Cursos Online de UX 						</a>
+					</li>
+							</ul>
+		</div>
+				<div class="listaCursos-categoria">
+			<h2 class="listaCursos-categoria-nome">
+				<a href="/cursos-online-business">
+					Cursos de Business				</a>
+			</h2>
+			<ul class="listaCursos-categoria-list">
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-maketing-digital">
+							Cursos Online de Marketing Digital						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-excel">
+							Cursos Online de Excel						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-agilidade">
+							Cursos Online de Agilidade						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-seo-e-adwords">
+							Cursos Online de SEO e adwords						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-documentacao">
+							Cursos Online de Documentação						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-concursos">
+							Cursos Online de Concursos						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-carreira">
+							Cursos Online de Carreira						</a>
+					</li>
+							</ul>
+		</div>
+			</div>
+</div>
+
+<div class="grupoCaelum">
+	<div class="container">
+		<p class="grupoCaelum-title"><a href="http://www.caelum.com.br/grupo">Grupo Caelum</a></p>
+		<ul class="grupoCaelum-list">
+			<li><a href="http://www.caelum.com.br"><img alt="Caelum" class="grupoCaelum-Caelumlogo" src="assets/img/logo-caelum.svg"></a></li>
+			<li><a href="http://www.alura.com.br"><img alt="Alura" class="grupoCaelum-Aluralogo" src="assets/img/logo-alura.svg"></a></li>
+			<li><a href="http://www.casadocodigo.com.br"><img class="grupoCaelum-CDClogo" alt="Casa do Código" src="assets/img/logo-cdc.svg"></a></li>
+			<li><a href="http://www.guj.com.br"><img alt="GUJ" class="grupoCaelum-GUJlogo" src="assets/img/logo-guj.svg"></a></li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>
+

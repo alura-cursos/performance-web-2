@@ -1,0 +1,145 @@
+.home-diferenciais{
+	background: #4dba7a;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 35px;
+}
+
+.home-diferenciais-titulo{
+	font-weight: bold;
+	font-size: 1.25em;
+	padding: 0 0 20px 0;
+}
+	@media (min-width: 900px) {
+		.home-diferenciais-titulo {
+			font-size: 1.4em;
+			line-height: 1.3;
+			margin-top: 0;
+		}
+	}
+
+.home-diferenciais-video {
+	padding-bottom: 25px;
+}
+
+.home-diferenciais-video-wrapper {
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+
+.home-diferenciais-item{
+	padding-bottom: 35px;
+}
+
+
+/* icone de diferenciais da home */
+.home-diferenciais-icone {
+	display: block;
+	height: 80px;
+	width: 80px;
+
+	margin: 0 auto;
+	text-align: center;
+
+	border: solid 3px #fff;
+	border-radius: 50%;
+}
+.home-diferenciais-icone:before {
+	content: '';
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	margin-top: 17px;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+
+	background-image: url("../../assets/img/diferenciais.png");
+}
+
+	.icone-cresca:before {
+		background-position: center;
+	}
+	.icone-carreira:before {
+		background-position: top;
+	}
+	.icone-impacto:before {
+		background-position: bottom;
+	}
+
+/* fim dos icones */
+
+
+
+.home-diferenciais-item-nome{
+	font-weight: bold;
+	font-size: 1.125em;
+	margin-bottom: 10px;
+}
+
+.home-diferenciais-item-descricao{
+	font-size: 1.125em;
+	font-weight: 100;
+	font-size: 1em;
+	opacity: 0.8;
+}
+
+.home-diferenciais-list {
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+@media (min-width: 400px){
+	.home-diferenciais-icone {
+		flex-shrink: 0;
+		margin-right: 28px;
+	}
+
+	.home-diferenciais-item{
+		display: flex;
+		text-align: left;
+		align-items: center;
+	}
+}
+
+@media (min-width: 1000px){
+	.home-diferenciais {
+		padding-top: 85px;
+		padding-bottom: 60px;
+	}
+	.home-diferenciais .container{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.home-diferenciais-video {
+		width: 44%;
+		padding: 0;
+		text-align: left;
+	}
+		.home-diferenciais-video-wrapper {
+			margin: 0;
+		}
+	.home-diferenciais-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0;
+		max-width: none;
+		padding: 0;
+		width: 49.5%;
+	}
+	.home-diferenciais-item {
+		padding-bottom: 0;
+	}
+	.home-diferenciais-item-nome{
+		font-size: 21px;
+	}
+	.home-diferenciais-item-descricao{
+		padding-right: 20px;
+		font-weight:400;
+	}
+}
+

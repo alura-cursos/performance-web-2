@@ -1,0 +1,20 @@
+# Arquivo de configuração para deploy no Google App Engine que veremos na aula 4
+
+runtime: php55
+api_version: 1
+version: web
+
+handlers:
+  - url: /
+    static_files: index.html
+    upload: index.html
+    expiration: 0s
+
+  - url: /cadastrado.html
+    static_files: cadastrado.html
+    upload: cadastrado.html
+    expiration: 0s
+
+  - url: /assets
+    static_dir: assets
+    expiration: 365d

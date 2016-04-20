@@ -1,0 +1,54 @@
+@media not all and (min-width: 1000px){
+	.grupoCaelum{
+		display: none;
+	}
+}
+
+.grupoCaelum{
+	background: #fff;
+	height: 60px;
+	border-top: 1px solid #EBEBEE;
+}
+
+.grupoCaelum .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 100%;
+}
+
+	.grupoCaelum-list{
+		display: flex;
+		list-style: none;
+		width: 50%;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.grupoCaelum-title{
+		width: 20%;
+	}
+
+	.grupoCaelum-title a{
+		text-decoration: none;
+		color: #353535;
+		letter-spacing: -0.4px;
+	}
+
+		.grupoCaelum-Aluralogo{
+			height: 32px;
+		}
+
+		.grupoCaelum-Caelumlogo{
+			margin-top: 5px;
+		}
+
+		.grupoCaelum-CDClogo{
+			margin-top: 5px;
+		}
+
+		.grupoCaelum-GUJlogo{
+			margin-top: 5px;
+		}

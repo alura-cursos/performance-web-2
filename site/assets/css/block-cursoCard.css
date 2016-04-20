@@ -1,0 +1,175 @@
+.cursoCard-lista {
+	max-width: 320px;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+	.cursoCard {
+		display: inline-flex;
+		justify-content: flex-start;
+		align-items: center;
+
+		background: #ffffff;
+		color: inherit;
+		font-size: 14px;
+		text-decoration: none;
+		
+		margin: 2% auto;
+		padding: 0.75em;
+		height: 100px;
+		width: 100%;
+		transition: box-shadow .5s;
+	}
+
+		.cursoCard-firstRow {
+			width: 100%;
+			height: 100px;
+			padding: .75em;
+
+			display: flex;
+			align-items: center;
+		}
+			.cursoCard-nome {
+				letter-spacing: -0.2px;
+				margin-left: 15px;
+				text-align: left;
+				max-width: 80%;
+			}
+
+			.cursoCard-icone {
+				height: 100%;
+				width: 45px;
+				flex-shrink: 0;
+				flex-grow: 0;
+			}
+
+		.cursoCard-infos {
+			display: none;
+		}
+
+.cursoCard-infos-tempoEstimado {
+	width:30%;
+}
+.cursoCard-infos-dificuldade {
+	width:50%;
+}
+.cursoCard-infos-mais {
+	width:20%;
+}
+
+
+
+@media (min-width: 600px) {
+	.cursoCard-lista {
+		max-width: 640px;
+	}
+
+	/* 2 colunas */
+	.cursoCard.cursoCard {
+		margin: 0 2.4% 2.4% 0;
+		width: 48.8%; /* 50% - margin / 2 * 1 */
+		flex-direction: column;
+		padding: 0;
+		height: auto;
+		position: relative;
+	}
+	.cursoCard:nth-child(2n) {
+		margin-right: 0;
+	}
+
+		.cursoCard-infos:after{
+			content: "";
+			height: 0;
+			left: 0;
+			bottom: 0;
+			width: 100%; 
+			padding-top: 1.1em;
+			font-size: .95em;
+			position: absolute;
+			color: transparent;
+			text-align: center;
+			font-weight: bold;
+			transition: all ease-in-out 0.2s;
+		}
+
+		.cursoCard:hover .cursoCard-infos:after{
+			content: "MAIS INFORMA\00C7 \00D5 ES";
+			width: 100%;
+			background-color: #4dba7a;
+			color: #fff;
+			height:100%;
+			transition: all ease-in-out 0.2s;
+		}
+
+		.cursoCard-infos {
+			display: flex;
+			position: relative;
+			width: 100%;
+			height: 50px;
+			font-weight: bold;
+			color: #9898a6;
+			opacity: 0.7;
+			border-top: solid 2px #f9fafb;
+		}
+
+			.cursoCard-infos-tempoEstimado, .cursoCard-infos-dificuldade, .cursoCard-infos-mais {
+				text-align: center;
+			}
+
+			.cursoCard-infos-tempoEstimado, .cursoCard-infos-dificuldade {
+				flex-grow: 2;
+				border-right: solid 2px #f9fafb;
+				line-height: 0.9em;
+				padding-top: .9em;
+			}
+				.cursoCard-infos-tempoEstimado-texto {
+						font-size: .8em;
+						font-weight: normal;
+				}
+
+			.cursoCard-infos-dificuldade {
+				padding-top: 1.3em;
+				font-size:.9em;
+			}
+
+			.cursoCard-infos-mais {
+				flex-grow: 1;
+				font-size: 1.5em;
+				padding-top: .4em;
+			}
+}
+
+@media (min-width: 900px) {
+	.cursoCard {
+		font-size: 15px;
+	}
+
+	.cursoCard-lista {
+		max-width: 960px;
+		margin-top: 50px;
+		margin-bottom: 100px;
+	}
+
+	/* 3 colunas */
+	.cursoCard.cursoCard {
+		margin: 0 2.2% 2.2% 0;
+		width: 31.86%; /* 33,3333% - margin / 3 * 2 */
+	}
+	.cursoCard:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.cursoCard-lista {
+		max-width: 1280px;
+	}
+	
+	/* 4 colunas */
+	.cursoCard.cursoCard {
+		margin: 0 1.6% 1.6% 0;
+		width: 23.8%; /* 25% - margin / 4 * 3 */
+	}
+	.cursoCard:nth-child(4n) {
+		margin-right: 0;
+	}
+}

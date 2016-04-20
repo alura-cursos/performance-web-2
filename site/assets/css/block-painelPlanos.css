@@ -1,0 +1,512 @@
+.painelPlanos {
+	background-color: #4dba7a;
+	position: relative;
+	text-align: center;
+}
+
+	.painelPlanos-onda {
+		display: block;
+		width: 100%;
+		position: absolute;
+		height: 25px;
+		top: 0;
+		fill: #4dba7a;
+	}
+		@media not all and (min-width: 500px) {
+			.painelPlanos-onda {
+				display: none;
+			}
+		}
+	
+	.painelPlanos .container {
+		padding-bottom: 1.5em;
+	}
+	@media (min-width: 1000px){
+		.painelPlanos-onda {
+			height: 60px;
+		}
+	}
+	@media (min-width: 1000px){
+		.painelPlanos .container {
+			padding-top: 2em;
+		}
+	}
+
+	@media (min-width: 1200px){
+		.painelPlanos .container {
+			padding-top: 58px;
+		}
+	}
+
+
+
+.painelPlanos-vantagens {
+	color: #FFF;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 450px;
+	margin: 0 auto;
+	padding-top: 12px;
+}
+	.painelPlanos-vantagem {
+		font-size: .8rem;
+		margin-top: 1.5em;/* fallback pra webkit velho que nao suporta flex-wrap */
+		width: 48%;
+		display: inline-block;
+		margin-bottom: 0.5em;
+	}
+	.painelPlanos-vantagem-icon {
+		display: block;		
+		margin: 0 auto 7px;
+		height: 28px;
+		width: 28px;
+	}
+
+	@media (min-width: 440px){
+		.painelPlanos-vantagem {
+			display: inline-block;
+			display: flex;
+			align-items: center;
+			text-align: left;
+		}
+		.painelPlanos-vantagem-icon {
+			margin: 0 1em 0 0;
+			height: 42px;
+			flex: 0 0 42px;
+			width: 42px;
+		}
+		.painelPlanos-vantagem-icon.i24h {
+			height: 50px;
+			flex: 0 0 50px;
+			width: 50px;
+		}
+	}
+
+	@media (min-width: 768px){
+		.painelPlanos-vantagens {
+			max-width: none;
+			padding: 1em 0 0;
+		}
+		.painelPlanos-vantagem {
+			flex: 0 0 24%;
+			width: 24%;
+		}
+	}
+
+	@media (min-width: 1000px){
+		.painelPlanos-vantagem {
+			flex: 0 0 23%;
+			width: 23%;
+			font-size: 1rem;
+			max-width: 230px;
+		}
+	}
+
+.painelPlanos-planos {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 880px;
+}
+
+	.painelPlanos-plano-titulo-wrapper {
+		font-size: 18px;
+		margin-bottom: 10px;
+		font-weight: 900;
+		line-height: 50px;
+	}
+
+		.painelPlanos-plano-titulo {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: normal;
+		}
+
+		.painelPlanos-plano-curso .painelPlanos-plano-titulo-wrapper {
+			font-size: 1em;
+			padding-top: 1em;
+		}
+
+	.painelPlanos-plano-preco {
+		color: #65cf67;
+		font-weight: bold;
+		display: block;
+		font-size: 22px;
+		line-height: 1;
+	}
+
+		.painelPlanos-plano-preco-parcelas {
+			display: block;
+			font-size: 80%;
+		}
+		.painelPlanos-plano-preco-cheio {
+			color: #999;
+			font-size: 70%;
+			display: block;
+			padding-top: 2px;
+		}
+
+	.painelPlanos-plano-precoTotal {
+		color: #4f4f4f;
+		display: block;
+		font-size: 13px;
+		opacity: 0.39;
+	}
+		.painelPlanos-plano-precoTotal-cheio {
+			display: none;
+			font-size: 90%;
+		}
+
+	.painelPlano-plano-alunos {
+		font-size: 80%;
+		font-style: italic;
+		padding-top: 10px;
+	}
+
+	@media (min-width: 360px) {
+		.painelPlanos-plano-preco {
+			font-size: 26px;
+		}
+		.painelPlanos-plano-preco-parcelas {
+			display: inline-block;
+		}
+		.painelPlanos-plano-titulo-wrapper {
+			font-size: 21px;
+		}
+	}
+	@media (min-width: 540px) {
+		.painelPlanos-plano-preco-parcelas,
+		.painelPlanos-plano-preco-cheio,
+		.painelPlanos-plano-precoTotal-cheio {
+			display: inline-block;
+			padding: 0;
+			font-size: 80%;
+		}
+	}
+	@media (min-width: 650px) {
+		.painelPlanos-plano-titulo-wrapper {
+			font-size: 29px;
+		}
+
+	}
+	@media (min-width: 1200px) {
+		.painelPlanos-plano-preco {
+			font-size: 28px;
+		}
+		.painelPlanos-plano-titulo-wrapper {
+			font-size: 38px;
+		}
+	}
+
+	.painelPlanos-plano-botaoComprar {
+		display: block;
+		margin: 26px auto 0;
+		width: 80%;
+		font-size: 14px;
+		text-transform: uppercase;
+		background-color: #4dbb7b;
+		color: #FFF;
+		padding: .8rem 0;
+		border-radius: 5px;
+		box-shadow: none;
+		border: none;
+		text-decoration: none;
+		max-width: 300px;
+		transition: opacity .5s;
+		font-weight: bold;
+	}
+
+	.painelPlanos-plano-botaoComprar:hover {
+		opacity: .7;
+	}
+
+@media not all and (min-width: 1000px) {
+	.painelPlanos {
+		padding-top: 2em;
+	}
+
+	.painelPlanos-planos {
+		overflow: hidden;
+		position: relative;
+		background-color: #fff;
+		max-width: 700px;
+
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.painelPlanos-plano[data-premiumplus] {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		right:0;
+		bottom: 0;
+	}
+	.painelPlanos-def {
+		width: 50%;
+	}
+
+	.painelPlanos-plano-curso {
+		background-color: #fff;
+		border-top: 16px solid #48BB78;
+		padding-bottom: 16px;
+		height: 240px;/* precisa ser fixo pra posicionar os checks do premiumplus */
+		z-index: 1;
+	}
+
+		.painelPlanos-plano-curso .painelPlanos-def {
+			width: 100%
+		}
+
+	.painelPlanos-plano[data-premiumplus] .painelPlanos-def {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+@media (min-width: 1000px) {
+	.painelPlanos-planos {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.painelPlanosComCurso .painelPlanos-planos {
+		max-width: none;
+	}
+
+	.painelPlanos-plano {
+		display: inline-block; /* fallback */
+		background-color: #FFF;
+		padding: 1em 1em 7em;
+		position: relative;
+		overflow-x: hidden;
+		width: 48%;
+	}
+
+	.painelPlanos-plano-curso .painelPlanos-plano-titulo-wrapper {
+		padding-top: 0;
+	}
+
+		.painelPlanosComCurso .painelPlanos-plano {
+			width: 32%;
+		}
+
+	.painelPlanos-plano-botaoComprar {
+		position: absolute;
+		bottom: 3em;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 16px;
+	}
+		.no-transform .painelPlanos-plano-botaoComprar {
+			left: 3em;
+		}
+
+	.painelPlanos-plano-titulo-wrapper {
+		line-height: 75px;
+		margin-top: 0;
+	}
+
+	.painelPlanosComOnda + * {
+		padding-top: 80px;
+	}
+}
+
+
+.painelPlanos-info {
+	list-style: none;
+	font-size: .9rem;
+	margin-top: 1.5rem;
+	height: 184px; /* IE11 BUG: 5 * line-height + 4 * border */
+}
+
+	.painelPlanos-info-item {
+		position: relative;
+	}
+		.painelPlanos-info-comum,
+		.painelPlanos-info-item {
+			line-height: 36px;
+		}
+		.painelPlanos-info-check {
+			width: 1rem;
+			height: 1rem;
+			
+			position: absolute;
+			left: 0;
+			top: 10px;
+		}
+		.painelPlanos-info-texto {
+			display: inline-block;
+		}
+		@media (max-width: 360px) {
+			.painelPlanos-info-texto {
+				font-size: 90%;
+			}
+		}
+
+		.painelPlanos-info-numero {
+			color: #48BB78;
+			display: inline-block;
+			padding-right: 3px;
+		}
+
+.painelPlanos-footer{
+	background: #324c64;
+	color: #fff;
+	position: relative;
+}
+.painelPlanos-footer .container {
+	background-image: linear-gradient(to right,
+		#5e9edc					0%, #5e9edc calc(100% / 3 * 1),
+		#fbcf36	calc(100% / 3 * 1), #fbcf36 calc(100% / 3 * 2),
+		#4bb97a calc(100% / 3 * 2), #4bb97a calc(100% / 3 * 3)
+    );
+	background-size: 100% 15px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	width: 100%;
+	margin: 0 auto;
+}
+
+	.painelPlanos-footer-list{
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 15px;
+		padding-top: 35px;
+	}
+
+		.painelPlanos-footer-item{
+			display: inline-block;
+			width: 33%;
+			line-height: 1;
+		}
+
+		.painelPlanos-footer-item-curso-icone {
+			content: '';
+			display: block;
+			width: 28px;
+			height: 28px;
+			margin: 0 auto;
+			background-position: center;
+			background-size: contain;
+			margin-bottom: 10px;
+		}
+			.painelPlanos-footer-item-aula .painelPlanos-footer-item-curso-icone {
+				width: 30px; height: 30px;
+			}
+
+			@media(min-width: 1000px){
+				.painelPlanos-footer-item h3{
+					font-size: 2em;
+					font-weight: 900;
+				}
+
+				.painelPlanos-footer-item span{
+					font-size: 1.5em;
+					letter-spacing: -1px;
+				}
+			}
+
+@media not all and (min-width: 1000px) {
+	.painelPlanos-info-item:not(:last-child),
+	.painelPlanos-info-comum {
+		border-bottom: 1px solid #f3f3f3;	
+	}
+
+	.painelPlanos-plano[data-premium] .painelPlanos-info-texto {
+		margin: 0 auto;
+	}
+
+	.painelPlanos-plano .painelPlanos-info-check {
+		margin: 0 1rem;
+	}
+	.painelPlanos-plano[data-premiumplus] .painelPlanos-info {
+		position: absolute;
+		bottom: 0;
+		left: 100%;
+		width: 100%;
+		margin-left: -3rem; /* check width + margins */
+	}
+
+		.painelPlanosComCurso .painelPlanos-plano[data-premiumplus] .painelPlanos-info {
+			bottom: 240px; /* .painelPlanos-plano-curso height */
+		}
+
+	.painelPlanos-plano[data-premiumplus] .painelPlanos-def {
+		width: 100%;
+	}
+	.painelPlanos-plano[data-premiumplus] .painelPlanos-info {
+		width: 200%; /* dobro pq pai ta em 50% */
+	}
+
+	.painelPlanos-info-comum {
+		text-align: center;
+		width: 100%;
+	}
+		.painelPlanos-plano[data-premiumplus] .painelPlanos-info-comum {
+			visibility: hidden;
+		}
+
+	.painelPlanos-plano-curso .painelPlanos-info{
+		display: none;
+	}
+
+}
+
+@media (min-width: 1000px) {
+	.painelPlanos-info-comum {
+		display: flex;
+	}
+	.painelPlanos-info {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 240px;
+		text-align: left;
+	}
+
+	.painelPlanos-info-numero {
+		padding: 0;
+		margin: 0;
+		width: 48px;
+		text-align: center;
+	}
+	.painelPlanos-info-check {
+		margin: 0 14px;/* (info_numero_width - check_width) / 2 */
+		display: inline-block;
+		position: static;
+	}
+}
+
+@media (min-width: 1000px) {
+	.painelPlano-plano-alunos {
+		position: absolute;
+		left: -200px; /*esconde dos browsers sem transform */
+		top: -30px;/* padding top - bottom */
+		padding: 40px 70px 10px;
+		width: 200px;
+		font-style: normal;
+		font-size: 13px;
+		text-align: center;
+		background-color: #FFC23B;
+		transform: translateY(8px) translateX(122px) rotate(-45deg);
+	}
+	[data-premiumplus] .painelPlano-plano-alunos {
+		background-color: #ddd;
+	}
+
+	/* animacao de entrada */
+	.painelPlanos-plano {
+		transition: transform 700ms ease, opacity 500ms ease;
+	}
+
+	.painelPlanos-invisivel:not(.painelPlanosComCurso) .painelPlanos-plano:nth-child(1) {
+		transform: translateX(-100vw);
+		opacity: 0;
+	}
+
+	.painelPlanos-invisivel:not(.painelPlanosComCurso) .painelPlanos-plano:nth-child(2) {
+		transform: translateX(100vw);
+		opacity: 0;
+	}
+}

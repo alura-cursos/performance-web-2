@@ -1,0 +1,98 @@
+.home-headline {
+	text-align: center;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.home-headline-cta {
+	display: none;
+	background: transparent;
+}
+
+.home-headline-cta:hover {
+	border: 2px solid #4dba7a;
+}
+
+
+@media (min-width: 600px) {
+	.home-headline-cta {
+		display: inline-block;
+		margin-bottom: 43px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.home-headline-cta {
+		margin-top: 2em;
+		margin-bottom: 5em;
+	}
+}
+
+
+
+
+.home-cursos{
+	background: #eef1f2;
+	padding: 30px 0;
+}
+	.home-cursos .cursoCard-lista {
+		margin: 0 auto;
+	}
+
+.home-cursos-titulo{
+	font-size: 1.25em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.cursoCard-lista + .home-cursos-titulo {
+	padding-top: 40px;
+}
+
+@media (min-width: 600px) {
+	.home-cursos{
+		padding: 40px 0;
+	}
+	.home-cursos-titulo{
+		font-size: 22px;
+		margin-bottom: 1.25em;
+	}
+}
+
+@media (min-width: 1000px) {
+	.home-cursos{
+		padding: 70px 0;
+	}
+	
+	.home-cursos-titulo{
+		font-size: 28px;
+	}
+}
+
+
+.logo {
+	display: block;
+	margin: 24px auto;
+	width: 75px;
+}
+@media (min-width: 600px) {
+	.logo {
+		margin: 0;
+	}
+}
+@media (min-width: 1200px) {
+	.logo {
+		width: 95px;
+	}
+}
+
+
+@media (min-width: 720px) {
+	.categoriaCard-lista {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+

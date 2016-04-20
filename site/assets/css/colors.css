@@ -1,0 +1,67 @@
+.bg-categoria-mobile {
+	background-color: #fdc14a;
+} 
+.categoriaCard-lista .bg-categoria-mobile:hover {
+	background-color: #FDC84A;
+}
+
+.bg-categoria-programacao {
+	background-color: #00c86f;
+} 
+.categoriaCard-lista .bg-categoria-programacao:hover {
+	background-color: #08CC75;
+}
+
+.bg-categoria-front-end {
+	background-color: #009bdd;
+}
+.categoriaCard-lista .bg-categoria-front-end:hover {
+	background-color: #08A0E1;
+}
+
+.bg-categoria-design-ux {
+	background-color: #9d60b8;
+}
+.categoriaCard-lista .bg-categoria-design-ux:hover {
+	background-color: #A364BF;
+}
+
+.bg-categoria-infraestrutura {
+	background-color: #f1634b;
+}
+.categoriaCard-lista .bg-categoria-infraestrutura:hover {
+	background-color: #F26D56;
+}
+
+.bg-categoria-business {
+	background-color: #0079ac;
+}
+.categoriaCard-lista .bg-categoria-business:hover {
+	background-color: #007EAC;
+}
+
+
+
+.fg-categoria-mobile {
+	color: #fdc14a;
+}
+
+.fg-categoria-programacao {
+	color: #00c86f;
+}
+
+.fg-categoria-front-end {
+	color: #009bdd;
+}
+
+.fg-categoria-design-ux {
+	color: #9d60b8;
+}
+
+.fg-categoria-infraestrutura {
+	color: #f1634b;
+}
+
+.fg-categoria-business {
+	color: #0079ac;
+}

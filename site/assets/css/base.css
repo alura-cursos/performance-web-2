@@ -1,0 +1,69 @@
+/* fallback para browsers sem media queries */
+body {	
+	max-width: 500px; 
+	min-width: 320px; 
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+}
+@media (min-width: 1px) { 
+	body { 
+		max-width: none; 
+	} 
+}
+
+
+/* container */
+.container {
+	padding-right: 16px;
+	padding-left: 16px;
+}
+
+@media (min-width: 550px) {
+	.container {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+}
+
+@media (min-width: 750px) {
+	.container {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.container {
+		padding-right: 40px;
+		padding-left: 40px;
+		max-width: 1280px; /* 1200 sem o padding */
+	}
+}
+
+@media(min-width: 1280px){ /* fixa tamanho */
+	.container {
+		padding-right: 0;
+		padding-left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1200px;
+	}
+}
+
+main {
+	min-height: 60vh;
+}
+
+/* utils */
+.unlinkify {
+	color: inherit;
+	text-decoration: none;
+}
+
+.old-browser {
+	background-color: #fbcf36;
+	text-align: center;
+	line-height: 1.4;
+	padding: 8px;
+}

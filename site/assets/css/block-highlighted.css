@@ -1,0 +1,41 @@
+.highlighted {
+	background: #5e9edc;
+	color: #ffffff;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.highlighted-title {
+	font-size: 17px;
+	font-weight: normal;
+	margin-bottom: 1em;
+}
+
+.highlighted-link {
+	width: auto;
+	border-color: #fff;
+	color: #fff;
+}
+
+.highlighted-link:hover {
+	background-color: #FFF;
+	color: #5E9EDC;
+}
+
+@media (min-width: 600px) {
+	.highlighted {
+		padding: 40px 0;
+	}
+	.highlighted-title {	
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.highlighted {
+		padding: 70px 0;
+	}
+	.highlighted-title {	
+		font-size: 25px;
+	}
+}

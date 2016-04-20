@@ -1,0 +1,27 @@
+.aprenda {
+	background-color: #324c64;
+	color: #FFF;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.aprenda-titulo {
+ 	font-size: 1.85em;
+ 	letter-spacing: -1.2px;
+ 	line-height: 1.2;
+ 	font-weight: 800;
+ 	margin-bottom: 15px;
+}
+
+@media (min-width: 650px) {
+	.aprenda {
+		font-size: 19px;
+		padding: 70px 0;
+	}
+}
+
+@media (min-width: 1000px) {
+	.aprenda {
+		font-size: 25px;
+	}
+}

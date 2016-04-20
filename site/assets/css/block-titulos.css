@@ -1,0 +1,43 @@
+/* alguns titulos pra usar em paginas secundarias */
+
+.titulo-principal {
+	background-color: #5e9edc;
+	color: #fff;
+
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: -0.6px;
+	line-height: 1.2;
+
+	padding-bottom: 1em;
+	padding-top: 1em;
+	text-align: left;
+}
+	.titulo-principal[data-erro] {
+		background-color: #D64B4E;
+	}
+
+.titulo {
+	font-weight: bold;
+	font-size: 24px;
+
+	padding-bottom: 1em;
+	padding-top: 1em;
+
+	line-height: 1.2;
+}
+
+@media (min-width: 600px) {
+	.titulo-principal {
+		font-size: 48px;
+		letter-spacing: -1px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.titulo-principal {
+		font-size: 60px;
+		font-weight: 900;
+		letter-spacing: -1.3px;
+	}
+}

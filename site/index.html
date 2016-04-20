@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>Alura | Cursos online de tecnologia</title>
+
+	<script inline src="assets/js/home.js"></script>
+
+	<!-- build:js assets/js/scripts.js -->
+	<script src="assets/js/menu.js"></script>
+	<script src="assets/js/busca.js"></script>
+	<script src="assets/js/detect.js"></script>
+	<script src="assets/js/footer.js"></script>
+	<script src="assets/js/svg4everybody.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:css assets/css/estilos.css -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/base.css">
+	<link rel="stylesheet" href="assets/css/colors.css">
+	<link rel="stylesheet" href="assets/css/font.css">
+
+	<link rel="stylesheet" href="assets/css/block-buttons.css">
+	<link rel="stylesheet" href="assets/css/block-categoriaCard.css">
+	<link rel="stylesheet" href="assets/css/block-conteudo.css">
+	<link rel="stylesheet" href="assets/css/block-cursoCard.css">
+	<link rel="stylesheet" href="assets/css/block-depoimentos.css">
+	<link rel="stylesheet" href="assets/css/block-elasticMedia.css">
+	<link rel="stylesheet" href="assets/css/block-footer-listaCursos.css">
+	<link rel="stylesheet" href="assets/css/block-footer.css">
+	<link rel="stylesheet" href="assets/css/block-form-erro.css">
+	<link rel="stylesheet" href="assets/css/block-grupoCaelum.css">
+	<link rel="stylesheet" href="assets/css/block-header-busca.css">
+	<link rel="stylesheet" href="assets/css/block-header.css">
+	<link rel="stylesheet" href="assets/css/block-highlighted.css">
+	<link rel="stylesheet" href="assets/css/block-painelPlanos.css">
+	<link rel="stylesheet" href="assets/css/block-titulo-destaque.css">
+	<link rel="stylesheet" href="assets/css/block-titulos.css">
+
+	<link rel="stylesheet" href="assets/css/home-aprenda.css">
+	<link rel="stylesheet" href="assets/css/home-diferenciais.css">
+	<link rel="stylesheet" href="assets/css/home-fundo.css">
+	<link rel="stylesheet" href="assets/css/home.css">
+	<!-- endbuild -->
+</head>
+<body>
+
+<div class="home-fundo">
+	
+<header class="header">
+
+	<section class="header-barraBusca">
+		<div class="container">
+			<form action="/busca" class="header-barraBusca-form">
+				<label for="header-barraBusca-campoBusca">Qual curso procura?</label>
+				<input type="search" id="header-barraBusca-campoBusca" name="q" placeholder="Digite aqui a busca">
+				<button class="header-barraBusca-submit" type="submit">Buscar</button>
+			</form>
+		</div>
+	</section>
+	
+	<div class="container">
+		<a class="header-logo" href=".">
+			<img inline src="assets/img/logo-alura.svg" alt="Alura">
+		</a>
+
+		<div class="header-navegacao">
+			<form action="/busca" class="header-navegacao-form">
+				<input class="navegacao-form-input" type="search" placeholder="Digite sua busca aqui" name="q"><!--
+				--><button class="navegacao-form-submit" type="submit">
+					<img class="header-busca-icone" src="assets/img/busca.svg">
+				</button>
+			</form>
+
+			<a href="/busca" class="header-busca">
+				<img class="header-busca-icone" src="assets/img/busca.svg">
+			</a>
+
+			<a href="https://cursos.alura.com.br/dashboard" class="header-areaAluno">
+				Login
+			</a>
+
+			<a href="#planos" class="header-cta">
+				Matricule-se
+			</a>
+		</div>
+	</div>
+</header>
+
+
+	<div class="container home-headline">
+		<h1 class="titulo-destaque">Coloque seu potencial em prática!</h1>
+		<h2 class="subtitulo-destaque">Cursos online de tecnologia que reinventam sua carreira.</h2>
+
+		<a href="#planos" class="buttonLight home-headline-cta">
+			Matricule-se já
+		</a>	
+	</div>
+
+
+	<div class="categoriaCard-lista container">
+	<!--
+		--><a href="/cursos-online-mobile" class="categoriaCard-item bg-categoria-mobile">
+			<svg class="categoriaCard-item-icone"><use xlink:href="assets/img/categorias.svg#mobile"/></svg>
+			<h3 class="categoriaCard-item-nome">
+				<div class="categoriaCard-item-nome-cursos">Cursos de</div>
+				Mobile
+			</h3>
+			<p class="categoriaCard-item-descricao">iOS, Android, PhoneGap, e mais…</p>
+		</a><!--
+	--><!--
+		--><a href="/cursos-online-programacao" class="categoriaCard-item bg-categoria-programacao">
+			<svg class="categoriaCard-item-icone"><use xlink:href="assets/img/categorias.svg#programacao"/></svg>
+			<h3 class="categoriaCard-item-nome">
+				<div class="categoriaCard-item-nome-cursos">Cursos de</div>
+				Programação
+			</h3>
+			<p class="categoriaCard-item-descricao">Java, C#, Ruby, PHP, Python e mais…</p>
+		</a><!--
+	--><!--
+		--><a href="/cursos-online-front-end" class="categoriaCard-item bg-categoria-front-end">
+			<svg class="categoriaCard-item-icone"><use xlink:href="assets/img/categorias.svg#front-end"/></svg>
+			<h3 class="categoriaCard-item-nome">
+				<div class="categoriaCard-item-nome-cursos">Cursos de</div>
+				Front-end
+			</h3>
+			<p class="categoriaCard-item-descricao">HTML, CSS, Angular, JavaScript e mais…</p>
+		</a><!--
+	--><!--
+		--><a href="/cursos-online-infraestrutura" class="categoriaCard-item bg-categoria-infraestrutura">
+			<svg class="categoriaCard-item-icone"><use xlink:href="assets/img/categorias.svg#infraestrutura"/></svg>
+			<h3 class="categoriaCard-item-nome">
+				<div class="categoriaCard-item-nome-cursos">Cursos de</div>
+				Infraestrutura
+			</h3>
+			<p class="categoriaCard-item-descricao">Linux, SQL, Git, Docker e mais…</p>
+		</a><!--
+	--><!--
+		--><a href="/cursos-online-design-ux" class="categoriaCard-item bg-categoria-design-ux">
+			<svg class="categoriaCard-item-icone"><use xlink:href="assets/img/categorias.svg#design-ux"/></svg>
+			<h3 class="categoriaCard-item-nome">
+				<div class="categoriaCard-item-nome-cursos">Cursos de</div>
+				Design &amp; UX
+			</h3>
+			<p class="categoriaCard-item-descricao">Photoshop, Illustrator, Usabilidade e mais…</p>
+		</a><!--
+	--><!--
+		--><a href="/cursos-online-business" class="categoriaCard-item bg-categoria-business">
+			<svg class="categoriaCard-item-icone"><use xlink:href="assets/img/categorias.svg#business"/></svg>
+			<h3 class="categoriaCard-item-nome">
+				<div class="categoriaCard-item-nome-cursos">Cursos de</div>
+				Business
+			</h3>
+			<p class="categoriaCard-item-descricao">Agilidade, Startup, Marketing, SEO e mais…</p>
+		</a><!--
+	-->	</div>
+
+	<div class="home-fundo-container container">
+		<div class="home-fundo-inner-container">
+			<div class="home-fundo-nuvem esquerda"></div>
+			<div class="home-fundo-nuvem esquerda-grande"></div>
+			<div class="home-fundo-nuvem direita"></div>
+			<div class="home-fundo-drone"></div>
+		</div>
+	</div>
+</div>
+
+<div class="home-diferenciais">
+	<div class="container">
+		<div class="home-diferenciais-video">
+			<h2 class="home-diferenciais-titulo">Aprenda, crie e desenvolva no Alura!</h2>
+			<div class="home-diferenciais-video-wrapper">
+				<div class="elasticMedia-container">
+					<iframe class="elasticMedia" src="https://player.vimeo.com/video/99185150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="home-diferenciais-list">
+
+			<div class="home-diferenciais-item">
+				<span class="home-diferenciais-icone icone-carreira"></span>
+				<div class="home-diferenciais-item-texto">
+					<h3 class="home-diferenciais-item-nome">Sua carreira em alta</h3>
+					<p class="home-diferenciais-item-descricao">Tudo que você precisa para ser um melhor profissional em tecnologia e sua carreira decolar.</p>
+				</div>
+			</div>
+
+			<div class="home-diferenciais-item">
+				<span class="home-diferenciais-icone icone-cresca"></span>
+				<div class="home-diferenciais-item-texto">
+					<h3 class="home-diferenciais-item-nome">Você aprende na prática</h3>
+					<p class="home-diferenciais-item-descricao">No Alura você faz diversos exercícios que estimulam a aprender de verdade com projetos reais.</p>
+				</div>
+			</div>
+
+			<div class="home-diferenciais-item">
+				<span class="home-diferenciais-icone icone-impacto"></span>
+				<div class="home-diferenciais-item-texto">
+					<h3 class="home-diferenciais-item-nome">O conteúdo que você precisa</h3>
+					<p class="home-diferenciais-item-descricao">Já são 208 cursos e com novos lançamentos todos os meses, além de atualizações e melhorias constantes.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="depoimentos">
+	<div class="container">
+		<h2 class="depoimentos-titulo">O que os nossos alunos estão falando</h2>
+		<div class="depoimentos-list">
+			<div class="depoimentos-item">
+				<div class="depoimento-item-header">
+					<img class="depoimentos-item-foto" src="assets/img/aluno-adriano.jpeg">
+
+					<div class="depoimentos-item-header-nameData">
+						<h3 class="depoimentos-item-assinatura">Adriano</h3>
+						<p class="depoimentos-item-data">em 28/12/2015</p>
+					</div>
+				</div>
+
+				<p class="depoimentos-item-texto">Ótimo explicações e exemplos simples e de fácil entendimento.</p>
+				<p class="depoimentos-item-curso">
+					Sobre o curso 
+					<a class="depoimentos-item-link" href="https://www.alura.com.br/curso-online-primeiros-passos-com-java">Java I: Primeiros passos</a>
+				</p>
+			</div>
+			<div class="depoimentos-item">
+				<div class="depoimento-item-header">
+					<img class="depoimentos-item-foto" src="assets/img/aluno-nico.jpeg">
+
+					<div class="depoimentos-item-header-nameData">
+						<h3 class="depoimentos-item-assinatura">Nico</h3>
+						<p class="depoimentos-item-data">em 01/01/2017</p>
+					</div>
+				</div>
+
+				<p class="depoimentos-item-texto">Dinâmico e com uma metodologia assertiva! Consegue passe os conceitos de uma forma fluida e objetiva.</p>
+				<p class="depoimentos-item-curso">
+					Sobre o curso 
+					<a class="depoimentos-item-link" href="https://www.alura.com.br/curso-online-primeiros-passos-com-java">Java I: Primeiros passos</a>
+				</p>
+			</div>
+			<div class="depoimentos-item">
+				<div class="depoimento-item-header">
+					<img class="depoimentos-item-foto" src="assets/img/aluno-sergio.jpeg">
+					<div class="depoimentos-item-header-nameData">
+						<h3 class="depoimentos-item-assinatura">Sérgio</h3>
+						<p class="depoimentos-item-data">em 28/12/2018</p>
+					</div>
+				</div>
+
+				<p class="depoimentos-item-texto">A maior diferença que estou sentindo é que o ambiente de estudo não está me deixando meu estudo cansativo.</p>
+				<p class="depoimentos-item-curso">
+					Sobre o curso 
+					<a class="depoimentos-item-link" href="https://www.alura.com.br/curso-online-primeiros-passos-com-java">Java I: Primeiros passos</a>
+				</p>
+			</div>
+		</div>	
+	</div>
+</div>
+
+
+<div class="highlighted">
+	<div class="container">
+		<h2 class="highlighted-title">
+			Esses e muitos outros alunos conheceram e recomendaram. Invista na sua carreira também!
+		</h2>
+		<a class="buttonLight highlighted-link" href="#planos">
+			Matricule-se já
+		</a>
+	</div>
+</div>
+
+<div class="home-cursos">
+	<h2 class="home-cursos-titulo container">Nossos últimos lançamentos</h2>
+	
+<div class="cursoCard-lista container">
+	<!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-marketing-digital-canais-nao-pagos">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-marketing-digital-canais-nao-pagos.svg" alt="Marketing digital: Introdução aos canais não pagos" class="cursoCard-icone">
+				<div class="cursoCard-nome">Marketing digital: Introdução aos canais não pagos</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>3</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Básico</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-marketing-digital-canais-pagos">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-marketing-digital-canais-pagos.svg" alt="Marketing Digital: Introdução aos canais pagos" class="cursoCard-icone">
+				<div class="cursoCard-nome">Marketing Digital: Introdução aos canais pagos</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>7</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Básico</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-jsf-primefaces">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-jsf-primefaces.svg" alt="Java e JSF 2 - II: Componentes ricos com Primefaces" class="cursoCard-icone">
+				<div class="cursoCard-nome">Java e JSF 2 - II: Componentes ricos com Primefaces</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>12</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Intermediário</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-jsf-cdi">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-jsf-cdi.svg" alt="Java e JSF 2 - III: Integração com CDI" class="cursoCard-icone">
+				<div class="cursoCard-nome">Java e JSF 2 - III: Integração com CDI</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>16</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Intermediário</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-jpa-avancado">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-jpa-avancado.svg" alt="Java e JPA: Otimizações com JPA2 e Hibernate" class="cursoCard-icone">
+				<div class="cursoCard-nome">Java e JPA: Otimizações com JPA2 e Hibernate</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>12</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Avançado</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-ingles-para-entrevistas">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-ingles-para-entrevistas.svg" alt="Inglês: Candidate-se a vagas no exterior" class="cursoCard-icone">
+				<div class="cursoCard-nome">Inglês: Candidate-se a vagas no exterior</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>4</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Básico</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-android-studio-ii-integracoes-e-recursos">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-android-studio-ii-integracoes-e-recursos.svg" alt="Android II: Integração com apps e recursos do device" class="cursoCard-icone">
+				<div class="cursoCard-nome">Android II: Integração com apps e recursos do device</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>8</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Básico</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-design-editorial">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-design-editorial.svg" alt="Design editorial: Criação de materiais gráficos " class="cursoCard-icone">
+				<div class="cursoCard-nome">Design editorial: Criação de materiais gráficos </div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>8</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Básico</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--></div>
+
+
+	<h2 class="home-cursos-titulo container">Cursos mais feitos</h2>
+	
+<div class="cursoCard-lista container">
+	<!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-logica-de-programacao">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-logica-de-programacao.svg" alt="Lógica de Programação I: comece na carreira com JavaScript" class="cursoCard-icone">
+				<div class="cursoCard-nome">Lógica de Programação I: comece na carreira com JavaScript</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>20</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Básico</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-html-e-css">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-html-e-css.svg" alt="HTML e CSS: Os seus primeiros passos" class="cursoCard-icone">
+				<div class="cursoCard-nome">HTML e CSS: Os seus primeiros passos</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>20</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Básico</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-primeiros-passos-com-java">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-primeiros-passos-com-java.svg" alt="Java I: Primeiros passos" class="cursoCard-icone">
+				<div class="cursoCard-nome">Java I: Primeiros passos</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>12</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Básico</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-fundamentos-http">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-fundamentos-http.svg" alt="HTTP: Entendendo a web por baixo dos panos" class="cursoCard-icone">
+				<div class="cursoCard-nome">HTTP: Entendendo a web por baixo dos panos</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>10</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Básico</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-introducao-html-css">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-introducao-html-css.svg" alt="HTML5 e CSS3 I: Suas primeiras páginas da Web" class="cursoCard-icone">
+				<div class="cursoCard-nome">HTML5 e CSS3 I: Suas primeiras páginas da Web</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>32</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Básico</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-cordova-phonegap">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-cordova-phonegap.svg" alt="Cordova & PhoneGap: Apps mobile com HTML, CSS e JS" class="cursoCard-icone">
+				<div class="cursoCard-nome">Cordova & PhoneGap: Apps mobile com HTML, CSS e JS</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>20</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Intermediário</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-java-e-orientacao-a-objetos">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-java-e-orientacao-a-objetos.svg" alt="Java II: Orientação a Objetos" class="cursoCard-icone">
+				<div class="cursoCard-nome">Java II: Orientação a Objetos</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>12</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Básico</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--><!--
+		--><a class="cursoCard" href="https://www.alura.com.br/curso-online-angularjs-mvc">
+			<div class="cursoCard-firstRow">
+				<img src="assets/img/curso-angularjs-mvc.svg" alt="AngularJS: crie webapps poderosas" class="cursoCard-icone">
+				<div class="cursoCard-nome">AngularJS: crie webapps poderosas</div>
+			</div>
+			<div class="cursoCard-infos">
+				<div class="cursoCard-infos-tempoEstimado"> <p>16</p> <p class="cursoCard-infos-tempoEstimado-texto">horas</p></div>
+				<div class="cursoCard-infos-dificuldade"> Intermediário</div>
+				<div class="cursoCard-infos-mais">+</div>
+			</div>
+		</a><!--
+	--></div>
+
+</div>
+
+<div class="highlighted">
+	<div class="container">
+		<h2 class="highlighted-title">
+			Os cursos estão bombando e nosso time não para de produzir conteúdo novo!
+		</h2>
+		<a class="buttonLight highlighted-link" href="#planos">
+			Faça já sua matrícula
+		</a>
+	</div>
+</div>
+
+<div class="aprenda">
+	<div class="container">
+		<h2 class="aprenda-titulo">Aprenda com quem conhece de tecnologia!</h2>
+		<p class="aprenda-texto">Cursos atualizados, criados por profissionais do mercado.</p>
+	</div>
+</div>
+
+
+<div class="painelPlanos  painelPlanosComOnda" id="planos">
+	<div class="container">		
+		<div class="painelPlanos-planos">
+				<div class="painelPlanos-plano " data-premium>
+					<div class="painelPlanos-def">
+						<h3 class="painelPlanos-plano-titulo-wrapper">
+							<div class="painelPlanos-plano-titulo">
+								Premium							
+							</div>
+						</h3>
+						<span class="painelPlanos-plano-preco">
+							<span class="painelPlanos-plano-preco-parcelas">12x</span>
+							R$ 75						
+						</span>
+						<span class="painelPlanos-plano-precoTotal">
+							(à vista R$ 900)
+						</span>
+						<a href="https://www.alura.com.br/compra?p=premium" class="painelPlanos-plano-botaoComprar">
+							Matricule-se
+						</a>
+					</div>
+				
+					<ul class="painelPlanos-info">
+						<li class="painelPlanos-info-comum">
+							<div class="painelPlanos-info-numero">208</div>
+							<span>Cursos</span>
+						</li>
+						<li class="painelPlanos-info-comum">
+							<div class="painelPlanos-info-numero">7.391</div>
+							<span>Exercícios</span>
+						</li>
+						<li class="painelPlanos-info-item">
+							<img class="painelPlanos-info-check" src="assets/img/plano-checked.svg">
+							<div class="painelPlanos-info-texto">Estude por 1 ano</div>
+						</li>
+						<li class="painelPlanos-info-item">
+							<img class="painelPlanos-info-check" src="assets/img/plano-unchecked.svg">
+							<div class="painelPlanos-info-texto">3 ebooks da Casa do Código</div>
+						</li>
+						<li class="painelPlanos-info-item">
+							<img class="painelPlanos-info-check" src="assets/img/plano-unchecked.svg">
+							<div class="painelPlanos-info-texto">Curso de inglês no Galandra</div>
+						</li>
+					</ul>
+				</div>
+				<div class="painelPlanos-plano" data-premiumplus>
+					<div class="painelPlanos-def">
+						<h3 class="painelPlanos-plano-titulo-wrapper">
+							<div class="painelPlanos-plano-titulo">
+								Premium Plus
+							</div>
+						</h3>
+						<span class="painelPlanos-plano-preco">
+							<span class="painelPlanos-plano-preco-parcelas">12x</span>
+							R$ 100						
+						</span>
+						<span class="painelPlanos-plano-precoTotal">
+							(à vista R$ 1.200)
+						</span>
+						<a href="https://www.alura.com.br/compra?p=premiumplus" class="painelPlanos-plano-botaoComprar">
+							Matricule-se
+						</a>
+					</div>
+				
+					<ul class="painelPlanos-info">
+						<li class="painelPlanos-info-comum">
+							<div class="painelPlanos-info-numero">208</div>
+							<span>Cursos</span>
+						</li>
+						<li class="painelPlanos-info-comum">
+							<div class="painelPlanos-info-numero">7.391</div>
+							<span>Exercícios</span>
+						</li>
+						<li class="painelPlanos-info-item">
+							<img class="painelPlanos-info-check" src="assets/img/plano-checked.svg">
+							<div class="painelPlanos-info-texto">Estude por 1 ano</div>
+						</li>
+						<li class="painelPlanos-info-item">
+							<img class="painelPlanos-info-check" src="assets/img/plano-checked.svg">
+							<div class="painelPlanos-info-texto">3 ebooks da Casa do Código</div>
+						</li>
+						<li class="painelPlanos-info-item">
+							<img class="painelPlanos-info-check" src="assets/img/plano-checked.svg">
+							<div class="painelPlanos-info-texto">Curso de inglês no Galandra</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		<div class="painelPlanos-vantagens">
+			<div class="painelPlanos-vantagem">
+				<img class="painelPlanos-vantagem-icon" src="assets/img/plano-acesso.svg">
+				Acesso por 1 ano
+			</div>
+			<div class="painelPlanos-vantagem">
+				<img class="painelPlanos-vantagem-icon" src="assets/img/plano-certificado.svg">
+				Certificado digital de conclusão
+			</div>
+			<div class="painelPlanos-vantagem">
+				<img class="painelPlanos-vantagem-icon i24h" src="assets/img/plano-24h.svg">
+				Estude 24h/dia onde e quando quiser
+			</div>
+			<div class="painelPlanos-vantagem">
+				<img class="painelPlanos-vantagem-icon" src="assets/img/plano-cursos.svg">
+				Novos cursos todos os meses
+			</div>
+		</div>
+	</div>
+	
+ 	<div class="painelPlanos-footer">
+		<img class="painelPlanos-onda" src="assets/img/plano-onda.svg">
+
+ 		<div class="container">
+			<ul class="painelPlanos-footer-list">
+				<li class="painelPlanos-footer-item painelPlanos-footer-item-curso">
+					<img class="painelPlanos-footer-item-curso-icone" src="assets/img/plano-barra-cursos.svg">
+					<h3>208</h3>
+					<span>cursos</span>
+				</li>
+				<li class="painelPlanos-footer-item painelPlanos-footer-item-aula">
+					<img class="painelPlanos-footer-item-curso-icone" src="assets/img/plano-barra-aulas.svg">
+					<h3>1.638</h3>
+					<span>aulas</span>
+				</li>
+				<li class="painelPlanos-footer-item painelPlanos-footer-item-exerc">
+					<img class="painelPlanos-footer-item-curso-icone" src="assets/img/plano-barra-exercicios.svg">
+					<h3>7.391</h3>
+					<span>exercícios</span>
+				</li>
+			</ul>
+		</div>
+ 	</div> 
+</div>
+
+<footer class="footer">	
+	<div class="container">
+		<div class="footer-logos">
+			<a class="footer-logos-home" href="/">
+				<img src="assets/img/logo-alura.svg" alt="Alura" class="footer-logo">
+			</a>
+			<a href="http://www.caelum.com.br/" class="footer-link-caelum">
+				<h3 class="footer-powered-by">Powered by</h3>
+				<img src="assets/img/logo-caelum.svg" alt="Caelum" class="footer-logo footer-caelumLogo">
+			</a>
+		</div>
+		<div class="footer-navegue">
+			<h2 class="footer-navegue-titulo">Navegue</h2>
+			<ul class="footer-navegue-lista">
+				<li class="footer-navegue-lista-link"><a href="/dashboard">Área do Aluno</a></li>
+				<li class="footer-navegue-lista-link"><a href="/apostilas">Apostilas</a></li>
+				<li class="footer-navegue-lista-link"><a href="#planos">Planos</a></li>
+				<li class="footer-navegue-lista-link"><a href="/contato-empresas">Empresas</a></li>
+				<li class="footer-navegue-lista-link"><a href="/cursos-online-tecnologia">Todos os cursos</a></li>
+				<li class="footer-navegue-lista-link"><a href="/instrutores">Instrutores</a></li>
+				<li class="footer-navegue-lista-link"><a href="http://blog.alura.com.br/">Blog do Alura</a></li>
+				<li class="footer-navegue-lista-link"><a href="/politica-de-privacidade">Política de Privacidade</a></li>
+				<li class="footer-navegue-lista-link"><a href="/contato">Contato</a></li>
+				<li class="footer-navegue-lista-link"><a href="/sobre">Sobre nós</a></li>
+				<li class="footer-navegue-lista-link"><a href="http://suporte.alura.com.br/">Perguntas frequentes</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-newsletter">
+				<h2 class="footer-newsletter-titulo">Receba Novidades e Lançamentos</h2>
+
+				<div class="footer-newsletter-form">
+					<input type="email" class="footer-newsletter-input" placeholder="e-mail"><!--
+					--><button class="footer-newsletter-button buttonForm">OK</button>
+				</div>
+			</div>
+			<div class="footer-parceiros">
+				<h2 class="footer-parceiros-titulo">Parceiros</h2>
+				<a class="footer-parceiros-galandra" href="http://www.galandra.com.br/">
+					<img src="assets/img/logo-galandra-cinza.svg" alt="Galandra" class="footer-parceiros-imagem">
+				</a>
+				<a class="footer-parceiros-cdc" href="http://www.casadocodigo.com.br/">
+					<img src="assets/img/logo-cdc-cinza.svg" alt="Casa do Código" class="footer-parceiros-imagem">
+				</a>
+			</div>
+		</div>	
+	</div>
+</footer>
+
+<div class="listaCursos">
+	<div class="container">
+				<div class="listaCursos-categoria">
+			<h2 class="listaCursos-categoria-nome">
+				<a href="/cursos-online-mobile">
+					Cursos de Mobile
+				</a>
+			</h2>
+			<ul class="listaCursos-categoria-list">
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-mobile#filtro-ios">
+							Cursos Online de iOS
+						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-mobile#filtro-android">
+							Cursos Online de Android
+						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-mobile#filtro-multiplataforma">
+							Cursos Online de Multiplataforma
+						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-mobile#filtro-jogos">
+							Cursos Online de Jogos
+						</a>
+					</li>
+				</ul>
+		</div>
+		<div class="listaCursos-categoria">
+			<h2 class="listaCursos-categoria-nome">
+				<a href="/cursos-online-programacao">
+					Cursos de Programação				</a>
+			</h2>
+			<ul class="listaCursos-categoria-list">
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-programacao#filtro-grupo-java">
+							Cursos Online de Java						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-programacao#filtro-grupo-php">
+							Cursos Online de PHP						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-programacao#filtro-grupo-dotnet">
+							Cursos Online de .NET						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-programacao#filtro-grupo-python">
+							Cursos Online de Python						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-programacao#filtro-grupo-ruby">
+							Cursos Online de Ruby & Rails						</a>
+					</li>
+					<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-programacao#filtro-grupo-outros">
+							Cursos Online de Outros						</a>
+					</li>
+				</ul>
+		</div>
+		<div class="listaCursos-categoria">
+			<h2 class="listaCursos-categoria-nome">
+				<a href="/cursos-online-front-end">
+					Cursos de Front-end				</a>
+			</h2>
+			<ul class="listaCursos-categoria-list">
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-front-end#filtro-front-end">
+							Cursos Online de HTML e CSS						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-front-end#filtro-jquery">
+							Cursos Online de jQuery						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-front-end#filtro-javascript">
+							Cursos Online de JavaScript						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-front-end#filtro-frameworks-mvc-em-javascript">
+							Cursos Online de Frameworks MVC						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-front-end#filtro-automacao-front-end">
+							Cursos Online de Automação front-end						</a>
+					</li>
+							</ul>
+		</div>
+				<div class="listaCursos-categoria">
+			<h2 class="listaCursos-categoria-nome">
+				<a href="/cursos-online-infraestrutura">
+					Cursos de Infraestrutura				</a>
+			</h2>
+			<ul class="listaCursos-categoria-list">
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-sql">
+							Cursos Online de SQL						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-big-data">
+							Cursos Online de Big data						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-nosql">
+							Cursos Online de NoSQL						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-linux-comandos-e-processos">
+							Cursos Online de Linux						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-build-e-versionamento">
+							Cursos Online de Builds e versionamento						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-entrega-continua">
+							Cursos Online de Entrega Contínua						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-redes">
+							Cursos Online de Redes						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-infraestrutura#filtro-windows">
+							Cursos Online de Windows						</a>
+					</li>
+							</ul>
+		</div>
+		<div class="listaCursos-categoria">
+			<h2 class="listaCursos-categoria-nome">
+				<a href="/cursos-online-design-ux">
+					Cursos de Design & UX				</a>
+			</h2>
+			<ul class="listaCursos-categoria-list">
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-design">
+							Cursos Online de Design						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-photoshop-para-web-e-imagens">
+							Cursos Online de Photoshop						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-illustrator">
+							Cursos Online de Illustrator						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-videos">
+							Cursos Online de Vídeos						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-animacoes">
+							Cursos Online de Animações						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-fotografia">
+							Cursos Online de Fotografia						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-design-ux#filtro-ux">
+							Cursos Online de UX 						</a>
+					</li>
+							</ul>
+		</div>
+				<div class="listaCursos-categoria">
+			<h2 class="listaCursos-categoria-nome">
+				<a href="/cursos-online-business">
+					Cursos de Business				</a>
+			</h2>
+			<ul class="listaCursos-categoria-list">
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-maketing-digital">
+							Cursos Online de Marketing Digital						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-excel">
+							Cursos Online de Excel						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-agilidade">
+							Cursos Online de Agilidade						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-seo-e-adwords">
+							Cursos Online de SEO e adwords						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-documentacao">
+							Cursos Online de Documentação						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-concursos">
+							Cursos Online de Concursos						</a>
+					</li>
+									<li class="listaCursos-categoria-list-item">
+						<a href="/cursos-online-business#filtro-carreira">
+							Cursos Online de Carreira						</a>
+					</li>
+							</ul>
+		</div>
+			</div>
+</div>
+
+<div class="grupoCaelum">
+	<div class="container">
+		<p class="grupoCaelum-title"><a href="http://www.caelum.com.br/grupo">Grupo Caelum</a></p>
+		<ul class="grupoCaelum-list">
+			<li><a href="http://www.caelum.com.br"><img alt="Caelum" class="grupoCaelum-Caelumlogo" src="assets/img/logo-caelum.svg"></a></li>
+			<li><a href="http://www.alura.com.br"><img alt="Alura" class="grupoCaelum-Aluralogo" src="assets/img/logo-alura.svg"></a></li>
+			<li><a href="http://www.casadocodigo.com.br"><img class="grupoCaelum-CDClogo" alt="Casa do Código" src="assets/img/logo-cdc.svg"></a></li>
+			<li><a href="http://www.guj.com.br"><img alt="GUJ" class="grupoCaelum-GUJlogo" src="assets/img/logo-guj.svg"></a></li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>
+
