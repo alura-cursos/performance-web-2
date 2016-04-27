@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+(function() {
 
 	var newsletterButton = document.querySelector('.footer-newsletter-button');
 	var inputEmail = document.querySelector('.footer-newsletter-input');
@@ -51,4 +51,4 @@ window.addEventListener('load', function() {
 
 	}
 
-});
+})();
