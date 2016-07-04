@@ -10,7 +10,7 @@ handlers:
     upload: index.html
     expiration: 0s
     http_headers:
-      Link: <assets/img/logo-alura.svg>; rel=preload; as=image, <assets/img/background-cidade-fundo.svg>; rel=preload; as=image
+      Link: <assets/css/critico.css>; rel=preload; as=style, <assets/img/logo-alura.svg>; rel=preload; as=image, <assets/img/background-cidade-fundo.svg>; rel=preload; as=image
 
   - url: /cadastrado.html
     static_files: cadastrado.html
